@@ -7,4 +7,4 @@ df = df[df.Condition == 'Active']
 # drop columns which is not useful
 df = df.drop(columns = ['FIRST_N', 'LAST_N', 'Condition'])
 # wirte processed dataframe into txt file
-df.to_csv("Donation_updated.txt", sep = '\t',  index  = False, header=False)
+df.to_csv("donation_input.txt", sep = '\t',  index  = False, header=False)
